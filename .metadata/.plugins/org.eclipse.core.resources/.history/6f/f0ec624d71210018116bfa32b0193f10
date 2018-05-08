@@ -1,0 +1,33 @@
+package eg.edu.alexu.csd.filestructure.sort.cs23;
+
+import java.util.ArrayList;
+
+public class TimeTest {
+	
+	public void PrintTime(ArrayList unordered) {
+		
+		Sort s = new Sort();
+		
+		long startTime = System.currentTimeMillis();
+		s.heapSort(unordered);
+		long stopTime = System.currentTimeMillis();
+	    long elapsedTime = stopTime - startTime;
+	    System.out.println("Heap : " +elapsedTime);
+	    
+	    startTime = System.currentTimeMillis();
+	    s.sortSlow(unordered);
+	    stopTime = System.currentTimeMillis();
+	    elapsedTime = stopTime - startTime;
+	    System.out.println("slow : " +elapsedTime);
+	    
+	    startTime = System.currentTimeMillis();
+	    s.sortFast(unordered);
+	    stopTime = System.currentTimeMillis();
+	    elapsedTime = stopTime - startTime;
+	    System.out.println("fast : " +elapsedTime);
+	    
+	    System.out.println("-----------------------------------------");
+	    
+	}
+
+}

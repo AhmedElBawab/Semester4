@@ -1,0 +1,96 @@
+package eg.edu.alexu.csd.filestructure.sort.cs23;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		TimeTest t = new TimeTest();
+		
+		Random randomGenerator = new Random();
+		
+		ArrayList<Object> unordered = new ArrayList<Object>();
+		
+		unordered.add(64);
+		unordered.add(34);
+		unordered.add(25);
+		unordered.add(12);
+		unordered.add(22);
+		unordered.add(11);
+		unordered.add(90);
+		
+		t.PrintTime(unordered);
+		
+		unordered.clear();
+		unordered.add(10);
+		unordered.add(7);
+		unordered.add(8);
+		unordered.add(9);
+		unordered.add(1);
+		unordered.add(5);
+		
+		t.PrintTime(unordered);
+		
+		unordered.clear();
+		unordered.add(1);
+		unordered.add(4);
+		unordered.add(2);
+		unordered.add(4);
+		unordered.add(2);
+		unordered.add(4);
+		unordered.add(1);
+		unordered.add(2);
+		unordered.add(4);
+		unordered.add(1);
+		unordered.add(2);
+		unordered.add(2);
+		unordered.add(2);
+		unordered.add(2);
+		unordered.add(4);
+		unordered.add(1);
+		unordered.add(4);
+		unordered.add(4);
+		unordered.add(4);
+		
+		t.PrintTime(unordered);
+		
+		unordered.clear();
+		unordered.add(64);
+		unordered.add(34);
+		unordered.add(25);
+		unordered.add(12);
+		unordered.add(22);
+		unordered.add(11);
+		unordered.add(90);
+		
+		t.PrintTime(unordered);
+		
+		unordered.clear();
+	    for (int idx = 1; idx <= 100; ++idx){
+	    	unordered.add(randomGenerator.nextInt(1000));
+	    }
+	    
+	    t.PrintTime(unordered);
+	    
+	    unordered.clear();
+	    for (int idx = 1; idx <= 100; ++idx){
+	    	unordered.add(randomGenerator.nextInt(1000));
+	    }
+	    
+	    t.PrintTime(unordered);
+	    
+	    for(int i = 0 ; i <100 ; i++) {
+	    	unordered.clear();
+		    for (int idx = 1; idx <= 100; ++idx){
+		    	unordered.add(randomGenerator.nextInt(1000));
+		    }
+		    
+		    t.PrintTime(unordered);
+	    }
+	   
+	}
+
+}

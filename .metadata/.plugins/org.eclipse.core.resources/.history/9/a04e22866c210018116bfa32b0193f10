@@ -1,0 +1,59 @@
+package eg.edu.alexu.csd.filestructure.sort.cs23;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		TimeTest t = new TimeTest();
+		
+		ArrayList<Object> unordered = new ArrayList<Object>();
+		
+		unordered.add(64);
+		unordered.add(34);
+		unordered.add(25);
+		unordered.add(12);
+		unordered.add(22);
+		unordered.add(11);
+		unordered.add(90);
+		
+		t.PrintTime(unordered);
+		
+		unordered.clear();
+		unordered.add(10);
+		unordered.add(7);
+		unordered.add(8);
+		unordered.add(9);
+		unordered.add(1);
+		unordered.add(5);
+		
+		t.PrintTime(unordered);
+		
+		unordered.clear();
+		unordered.add(1);
+		unordered.add(4);
+		unordered.add(2);
+		unordered.add(4);
+		unordered.add(2);
+		unordered.add(4);
+		unordered.add(1);
+		unordered.add(2);
+		unordered.add(4);
+		unordered.add(1);
+		unordered.add(2);
+		unordered.add(2);
+		unordered.add(2);
+		unordered.add(2);
+		unordered.add(4);
+		unordered.add(1);
+		unordered.add(4);
+		unordered.add(4);
+		unordered.add(4);
+		
+		t.PrintTime(unordered);
+		
+	}
+
+}
